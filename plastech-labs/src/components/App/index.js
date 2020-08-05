@@ -4,7 +4,7 @@ import './styles.css';
 
 
 const App = () => (
-    <div className = "App">
+    <div className = "container-fluid">
     </div>
 );
 
