@@ -1,11 +1,34 @@
 import React from 'react';
 
-import './styles.css';
+import { INITIAL_STATE } from '../../Variables/initial_state';
 
+import styles from './app.module.css';
 
-const App = () => (
-    <div className = "container-fluid">
-    </div>
-);
+import Home from '../Home' ;
+
+class App extends React.Component {
+    constructor() {
+        super();
+        this.state = {...INITIAL_STATE}
+    }
+
+    displayNavbar = () => {
+        this.setState({ navbarVisible: !this.state.navbarVisible});
+    }
+
+    render() {
+        return(
+            <div className ={`container-fluid ${styles.container}`}>
+                <div className='row'>
+                    <Home
+                        displayNavbar={this.displayNavbar}
+                        navbarVisible={this.state.navbarVisible}
+                    />
+                </div>
+            </div>
+        )
+    }
+}
+
 
 export default App;
