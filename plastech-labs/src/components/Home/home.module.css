@@ -1,0 +1,40 @@
+.fullVHDiv{
+    height: 100vh;
+    width: 100%;
+}
+.carouselBackground{
+    height: 100vh;
+    width: 100%;
+    position: absolute !important;
+}
+.carouselBackgroundItem{
+    height: 100%;
+}
+.image{
+    background-image: url('../../Assets/Img/fondoResponsive.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+}
+.image2{
+    background-image: url('../../Assets/Img/fondoResponsive2.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+}
+.image3{
+    background-image: url('../../Assets/Img/fondoResponsive3.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+}
+.carouselArrow{
+    margin-top: 45vh;
+    height: 10vh;
+}

@@ -1,0 +1,45 @@
+.navbarContainer{
+    z-index: 999;
+    color: white;
+}
+.logo{
+    background-image: url('../../Assets/Icons/Logo-horizontal.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 10vh;
+    width: 100%;
+}
+
+/*mobile styles*/
+@media(max-width:576px){
+    .navItem{
+        display: block;
+    }
+    .navItem p{
+        padding-left: 5vw;
+    }
+}
+
+/*desktop styles*/
+@media(min-width:992px){
+    .navItem{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .navItem p{
+        transition: .2s;
+        color: black;
+        margin: auto;
+        text-align: center;
+        font-size: 19px;
+    }
+    .navItem:hover {
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    .navItem:hover p{
+        transform: scale(1.2);
+    }
+}
