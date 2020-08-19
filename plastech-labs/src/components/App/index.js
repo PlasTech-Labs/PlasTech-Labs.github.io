@@ -1,10 +1,10 @@
 import React from 'react';
-
 import { INITIAL_STATE } from '../../Variables/initial_state';
 
 import styles from './app.module.css';
 
 import Home from '../Home' ;
+import Team from '../Team';
 
 class App extends React.Component {
     constructor() {
