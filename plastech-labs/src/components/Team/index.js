@@ -15,7 +15,7 @@ import imgLuca from '../../media/Luca.jpg';
 
 
 const Team = () => (
-    <div className="d-flex flex-column justify-content-center">
+    <div className="d-flex flex-column justify-content-center" name="team">
         <div className="d-flex flex-column teamTitle">
             <h1 className = "d-flex justify-content-center">Nuestro Equipo</h1>
         </div>

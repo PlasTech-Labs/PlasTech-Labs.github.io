@@ -24,6 +24,7 @@ class App extends React.Component {
                         displayNavbar={this.displayNavbar}
                         navbarVisible={this.state.navbarVisible}
                     />
+                    <Team/>
                 </div>
             </div>
         )
