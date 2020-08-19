@@ -1,0 +1,25 @@
+.teamTitle{
+    margin-top: 3rem;
+}
+
+.teamContainer{
+    margin-top: 2rem;
+}
+
+.lblName {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: x-large;
+}
+
+.socialMedia-icons {
+    color: black;
+}
+
+.socialMedia-icons:hover {
+    color: #008f2e;
+}
+
+.left {
+    margin-right: 0.4rem;
+}
