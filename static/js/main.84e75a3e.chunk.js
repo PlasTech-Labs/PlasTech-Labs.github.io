@@ -1,2 +1,0 @@
-(this["webpackJsonpplastech-labs"]=this["webpackJsonpplastech-labs"]||[]).push([[0],[,,,function(n,e,t){n.exports=t(12)},,,,,function(n,e,t){},function(n,e,t){},function(n,e,t){},,function(n,e,t){"use strict";t.r(e);var c=t(0),a=t.n(c),s=t(2),o=t.n(s),i=(t(8),function(){return a.a.createElement("div",{className:"container-fluid"})});t(9),t(10),t(11);o.a.render(a.a.createElement(i,null),document.getElementById("root"))}],[[3,1,2]]]);
-//# sourceMappingURL=main.84e75a3e.chunk.js.map
