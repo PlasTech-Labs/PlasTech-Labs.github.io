@@ -1,7 +1,34 @@
 import React from "react";
 import {  MDBContainer, MDBRow, MDBCol, MDBIcon, MDBBtn, MDBInput } from "mdbreact";
 
-const ContactPage = () => {
+const SendMail = (nombre, correo, asunto, mensaje ) => {
+  var nodemailer = require('nodemailer');
+
+  var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'plastechlabs@gmail.com',
+      pass: 'PlasTech2020'
+    }
+  });
+
+  var mailOptions = {
+    from: 'plastechlabs@gmail.com',
+    to: 'plastechlabs@gmail.com',
+    subject: 'Sending Email using Node.js',
+    html: '<h1>Plastico</h1>'
+  };
+
+  transporter.sendMail(mailOptions, function(error, info){
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('Email sent: ' + info.response);
+    }
+  });
+
+}
+const Contact = (SendMail) => {
   return (
   
     <MDBContainer>
@@ -15,11 +42,11 @@ const ContactPage = () => {
     </p>
     <MDBRow>
       <MDBCol md="9" className="md-0 mb-5">
-        <form>
+        <form onSubmit="SendMail">
           <MDBRow>
             <MDBCol md="6">
               <div className="md-form mb-0">
-                <MDBInput type="text" id="contact-name" label="Nombre" />
+                <MDBInput type="text" id="contact-name" label="Nombre" name="nombre"/>
               </div>
             </MDBCol>
             <MDBCol md="6">
@@ -28,6 +55,7 @@ const ContactPage = () => {
                   type="text"
                   id="contact-email"
                   label="Email"
+                  name="correo"
                 />
               </div>
             </MDBCol>
@@ -35,7 +63,7 @@ const ContactPage = () => {
           <MDBRow>
             <MDBCol md="12">
               <div className="md-form mb-0">
-                <MDBInput type="text" id="contact-subject" label="Asunto" />
+                <MDBInput type="text" id="contact-subject" label="Asunto" name="asunto" />
               </div>
             </MDBCol>
           </MDBRow>
@@ -46,13 +74,14 @@ const ContactPage = () => {
                   type="textarea"
                   id="contact-message"
                   label="Mensaje"
+                  name="mensaje"
                 />
               </div>
             </MDBCol>
           </MDBRow>
         </form>
         <div className="text-center text-md-left">
-          <MDBBtn color="success" size="md">
+          <MDBBtn color="success" size="md" type="submit" onSubmit="SendMail">
             Enviar
           </MDBBtn>
         </div>
@@ -92,4 +121,4 @@ const ContactPage = () => {
   );
 }
 
-export default ContactPage;
+export default Contact;

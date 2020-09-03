@@ -5,6 +5,7 @@ import styles from './app.module.css';
 
 import Home from '../Home' ;
 import Team from '../Team';
+import Contact from '../Contact';
 
 class App extends React.Component {
     constructor() {
@@ -25,6 +26,7 @@ class App extends React.Component {
                         navbarVisible={this.state.navbarVisible}
                     />
                     <Team/>
+                    <Contact/>
                 </div>
             </div>
         )
