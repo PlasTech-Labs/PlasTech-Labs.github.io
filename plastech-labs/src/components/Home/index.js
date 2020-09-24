@@ -7,7 +7,7 @@ import Navbar from '../Navbar';
 
 export default function Home({ ...props }) {
     return(
-        <div className={styles.fullVHDiv}>
+        <div className={styles.fullVHDiv} name="home">
             <div id='backgroundCarousel' className={`carousel slide ${styles.carouselBackground}`} data-ride='carousel'>
                 <div className={`carousel-inner ${styles.carouselBackground}`}>
                     <div className={`carousel-item active ${styles.carouselBackgroundItem}`}>

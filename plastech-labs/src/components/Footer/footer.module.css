@@ -1,0 +1,140 @@
+/** General styles*/
+
+/** Phones styles*/
+@media(max-width: 576px) {
+    .fullVHDiv{
+      margin-top: 5vh;
+      width: 100%;
+      height: 35vh;
+      background-color: black;
+    }
+    .textContainer{
+      height: 10vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .textContainer p{
+      color: white;
+      margin: auto;
+      font-size: 12px;
+    }
+    .iconContainer{
+      height: 10vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .iconContainer a{
+      margin: auto;
+    }
+    .iconContainer a img{
+      height: 20px;
+      width: 20px;
+    }
+    .arrowContainer{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+    }
+    .arrowContainer a{
+        margin: auto;
+    }
+    .arrowContainer a img{
+        height: 30px;
+        width: 30px;
+        transform: rotate(180deg);
+    }
+  }
+  
+  /** Landscape phones and tablets styles*/
+  @media (min-width: 576px) and (max-width: 992px) {
+    .fullVHDiv{
+        width: 100%;
+        height: 20vh;
+        background-color: black;
+    }
+    .textContainer{
+      height: 20vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .textContainer p{
+      color: #d1d3d4;
+      margin: auto;
+      font-size: 15px;
+    }
+    .iconContainer{
+      height: 20vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .iconContainer a{
+      margin: auto;
+    }
+    .iconContainer a img{
+      height: 20px;
+      width: 20px;
+    }
+    .arrowContainer{
+        height: 20vh;
+        display: flex;
+        align-items: center;
+    }
+    .arrowContainer a{
+        margin: auto;
+    }
+    .arrowContainer a img{
+        height: 30px;
+        width: 30px;
+        transform: rotate(180deg);
+    }
+  }
+  
+  /** Landscape tablets and medium to large screens styles*/
+  @media (min-width: 992px) {
+    .fullVHDiv{
+      height: 20vh;
+      width: 100%;
+      background-color: black;
+    }
+    .textContainer{
+      height: 20vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .textContainer p{
+      color: white;
+      margin: auto;
+      font-size: 15px;
+    }
+    .iconContainer{
+      height: 20vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .iconContainer a{
+      margin: auto;
+    }
+    .iconContainer a img{
+      height: 20px;
+      width: 20px;
+    }
+    .arrowContainer{
+        height: 20vh;
+        display: flex;
+        align-items: center;
+    }
+    .arrowContainer a{
+        margin: auto;
+    }
+    .arrowContainer a img{
+        height: 30px;
+        width: 30px;
+        transform: rotate(180deg);
+    }
+  }

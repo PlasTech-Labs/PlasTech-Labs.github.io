@@ -1,13 +1,27 @@
 .navbarContainer{
     z-index: 999;
-    color: white;
+    background-color: white;
+    width: 100%;
+}
+.fullVHDiv{
+    height: 10vh;
+    background-color: white;
+    width: 100vw;
+}
+.whiteContainer{
+    background-color: white;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 .logo{
     background-image: url('../../Assets/Icons/Logo-horizontal.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 10vh;
+    height: 100%;
     width: 100%;
+    margin: auto;
 }
 
 /*mobile styles*/
@@ -18,11 +32,38 @@
     .navItem p{
         padding-left: 5vw;
     }
+    .dropdownIcon{
+        display: flex;
+        align-items: center;
+        background-color: white;
+        height: 10vh;
+    }
+    .dropdownIcon img{
+        width: 50%;
+        height: 50%;
+        margin: auto;
+    }
 }
-
+@media (min-width: 576px) and (max-width: 992px){
+    .navItem{
+        background-color: white;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .navItem p{
+        transition: .2s;
+        color: black;
+        margin: auto;
+        text-align: center;
+        font-size: 10px;
+    }
+}
 /*desktop styles*/
 @media(min-width:992px){
     .navItem{
+        background-color: white;
         height: 10vh;
         display: flex;
         align-items: center;
@@ -40,6 +81,6 @@
         border-radius: 10px;
     }
     .navItem:hover p{
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 }
