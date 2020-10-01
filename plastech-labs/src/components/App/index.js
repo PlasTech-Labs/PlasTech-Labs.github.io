@@ -4,6 +4,7 @@ import { INITIAL_STATE } from '../../Variables/initial_state';
 import styles from './app.module.css';
 
 import Home from '../Home' ;
+import AboutUs from '../AboutUs';
 import Team from '../Team';
 
 class App extends React.Component {
@@ -24,6 +25,7 @@ class App extends React.Component {
                         displayNavbar={this.displayNavbar}
                         navbarVisible={this.state.navbarVisible}
                     />
+                    <AboutUs/>
                     <Team/>
                 </div>
             </div>
