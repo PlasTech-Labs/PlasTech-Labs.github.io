@@ -6,6 +6,8 @@ import styles from './app.module.css';
 import Home from '../Home' ;
 import AboutUs from '../AboutUs';
 import Team from '../Team';
+import Footer from '../Footer'
+import Contact from '../Contact';
 
 class App extends React.Component {
     constructor() {
@@ -27,6 +29,8 @@ class App extends React.Component {
                     />
                     <AboutUs/>
                     <Team/>
+                    <Contact/>
+                    <Footer/>
                 </div>
             </div>
         )
