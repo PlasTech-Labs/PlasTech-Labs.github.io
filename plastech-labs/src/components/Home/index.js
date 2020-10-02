@@ -8,6 +8,10 @@ import Navbar from '../Navbar';
 export default function Home({ ...props }) {
     return(
         <div className={styles.fullVHDiv} name="home">
+            <Navbar
+                navbarVisible={props.navbarVisible}
+                displayNavbar={props.displayNavbar}
+            />
             <div id='backgroundCarousel' className={`carousel slide ${styles.carouselBackground}`} data-ride='carousel'>
                 <div className={`carousel-inner ${styles.carouselBackground}`}>
                     <div className={`carousel-item active ${styles.carouselBackgroundItem}`}>
@@ -33,10 +37,7 @@ export default function Home({ ...props }) {
                 <span className='carousel-control-next-icon' aria-hidden='true'></span>
                 <span className='sr-only'>Next</span>
             </a>
-            <Navbar
-                navbarVisible={props.navbarVisible}
-                displayNavbar={props.displayNavbar}
-            />
+            
         </div>
     )
 }
