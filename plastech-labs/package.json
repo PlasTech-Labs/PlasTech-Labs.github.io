@@ -19,6 +19,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "react-scroll": "^1.8.0",
+    "react-sticky-header": "^0.2.0",
     "reactstrap": "^8.5.1"
   },
   "scripts": {

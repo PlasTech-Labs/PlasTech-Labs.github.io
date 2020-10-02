@@ -6,12 +6,12 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 import './styles.css';
 
-import imgMaria from '../../media/Maria.jpeg';
-import imgCamila from '../../media/Camila.JPG';
-import imgMarco from '../../media/Marco.jpg';
-import imgAndy from '../../media/Andy.jpeg';
-import imgWilli from '../../media/Willi.jpg';
-import imgLuca from '../../media/Luca.jpg';
+import imgMaria from '../../Assets/media/Maria.jpeg';
+import imgCamila from '../../Assets/media/Camila.JPG';
+import imgMarco from '../../Assets/media/Marco.jpg';
+import imgAndy from '../../Assets/media/Andy.jpeg';
+import imgWilli from '../../Assets/media/Willi.jpg';
+import imgLuca from '../../Assets/media/Luca.jpg';
 
 
 const Team = () => (
